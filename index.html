@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Suyash</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:100" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="C:\Users\suyash\Desktop\jquery ui\jquery-ui-1.12.1\jquery-ui.js"></script>
+
+
+	<meta charset="utf-8">
+	<style type="text/css">
+		html,body{
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			overflow: hidden;
+		}
+		#particles-js{
+			height: 100vh;
+			background: #262626;
+		}
+		section{
+			position: absolute;
+			top: 45%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			overflow: hidden;
+		}
+		.content{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+		.heading{
+			color: grey;
+			font-family: 'Work Sans', sans-serif;
+			text-transform: uppercase;
+			letter-spacing: 6px;
+			font-size: 50px;
+			font-weight: 200;
+			white-space: nowrap;
+		}
+		.images{
+			display: flex;
+			flex-direction: row;
+			justify-content:space-around;
+			align-items: center;
+			margin-top: -35px;
+		}
+		img{
+			padding-left: 20px;
+			max-width: 60px;
+			max-height: 60px;
+
+		}
+		@media (max-width: 800px){
+			.heading{
+				font-size: 30px;
+			}
+			img{
+				padding-left: 12px;
+				max-width: 40px;
+				max-height: 40px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="particles-js"></div>
+	<section>
+		<div class="content">
+			<div class="heading">
+				<p>suyash saxena</p>
+				
+			</div>
+			<div class="images">
+				<p class="logo"><img src="html5.png"></p>
+				<p class="logo1"><img src="css3.png"></p>
+				<p class="logo2"><img src="js.png"></p>
+				<p class="logo3"><img src="jquery.png"></p>
+				<p class="logo4"><img src="php.svg"></p>
+				<p class="logo5"><img src="python.png"></p>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript" src="particles.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript">
+		$(".btn").click(function(){
+			jQuery.fx.off=true;
+			$("#content").toggle("display");
+		});
+	
+	</script>
+</body>
+</html>
